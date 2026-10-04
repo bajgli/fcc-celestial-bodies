@@ -89,7 +89,7 @@ CREATE TABLE public.moon (
     name character varying(30) NOT NULL,
     planet_id integer,
     type character varying(10),
-    has_nazis boolean
+    has_atmosphere boolean
 );
 
 
@@ -266,10 +266,10 @@ ALTER TABLE ONLY public.tablename ALTER COLUMN tablename_id SET DEFAULT nextval(
 --
 
 INSERT INTO public.galaxy VALUES (1, 'Milky Way', 250000000, 0.2, 'Barred spiral galaxy that contains our Solar System');
-INSERT INTO public.galaxy VALUES (2, 'Andromeda', 1000000000, 2.5, 'Nearest large sprial galaxy and the most distant object visible tothe naked eye');
+INSERT INTO public.galaxy VALUES (2, 'Andromeda', 1000000000, 2.5, 'Nearest large spiral galaxy and the most distant object visible to the naked eye');
 INSERT INTO public.galaxy VALUES (3, 'Triangulum', 40000000, 2.7, 'Third-largest member of the Local Group, a small spiral galaxy');
 INSERT INTO public.galaxy VALUES (4, 'Large Magellanic Cloud', 30000000, 0.2, 'Irregular satellite galaxy of the Milky Way');
-INSERT INTO public.galaxy VALUES (5, 'Whirlpool', 100000000, 23.0, 'Classic grand-desing spiral interacting with a smaller companion');
+INSERT INTO public.galaxy VALUES (5, 'Whirlpool', 100000000, 23.0, 'Classic grand-design spiral interacting with a smaller companion');
 INSERT INTO public.galaxy VALUES (6, 'Sombrero', 100000000, 29.3, 'Spiral galaxy with a bright nucleus and a prominent dust lane');
 
 
@@ -277,26 +277,26 @@ INSERT INTO public.galaxy VALUES (6, 'Sombrero', 100000000, 29.3, 'Spiral galaxy
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.moon VALUES (1, 'moondfasd', 4, 'idk', true);
-INSERT INTO public.moon VALUES (2, 'moonasdfas', 5, 'idk', false);
-INSERT INTO public.moon VALUES (3, 'moonlolooll', 6, 'xd', false);
-INSERT INTO public.moon VALUES (4, 'moonvamm', 6, 'brummbrumm', false);
-INSERT INTO public.moon VALUES (5, 'moonhello', 4, 'idk', false);
-INSERT INTO public.moon VALUES (6, 'moonvolt', 6, 'idk', false);
-INSERT INTO public.moon VALUES (7, 'moonmoon', 8, 'noidea', true);
-INSERT INTO public.moon VALUES (8, 'moonlelelle', 8, 'hányás', false);
-INSERT INTO public.moon VALUES (9, 'holdold', 7, 'vmihold', true);
-INSERT INTO public.moon VALUES (10, 'kakimaki', 7, 'egyhold', false);
-INSERT INTO public.moon VALUES (11, 'fghnajklé', 6, 'egyzhold', false);
-INSERT INTO public.moon VALUES (12, 'holdnév', 6, 'holdfajta', false);
-INSERT INTO public.moon VALUES (13, 'holdnevemegint', 8, 'holdfajta', true);
-INSERT INTO public.moon VALUES (14, 'holduj', 7, 'holdold', true);
-INSERT INTO public.moon VALUES (15, 'holdholdhold', 6, 'holdfajta', true);
-INSERT INTO public.moon VALUES (16, 'holdnevmegint xd', 6, 'holdfajta', false);
-INSERT INTO public.moon VALUES (17, 'holdfunny', 7, 'holdfajta', true);
-INSERT INTO public.moon VALUES (18, 'holdvalamivicces', 6, 'holdfajta', true);
-INSERT INTO public.moon VALUES (19, 'holdhuha', 6, 'holdfajta', false);
-INSERT INTO public.moon VALUES (20, 'holdnevezete', 7, 'holdfajta', true);
+INSERT INTO public.moon VALUES (1, 'Moon', 3, 'Rocky', false);
+INSERT INTO public.moon VALUES (2, 'Phobos', 4, 'Rocky', false);
+INSERT INTO public.moon VALUES (3, 'Deimos', 4, 'Rocky', false);
+INSERT INTO public.moon VALUES (4, 'Io', 5, 'Rocky', true);
+INSERT INTO public.moon VALUES (5, 'Europa', 5, 'Icy', false);
+INSERT INTO public.moon VALUES (6, 'Ganymede', 5, 'Icy', false);
+INSERT INTO public.moon VALUES (7, 'Callisto', 5, 'Icy', false);
+INSERT INTO public.moon VALUES (8, 'Titan', 6, 'Icy', true);
+INSERT INTO public.moon VALUES (9, 'Enceladus', 6, 'Icy', false);
+INSERT INTO public.moon VALUES (10, 'Mimas', 6, 'Icy', false);
+INSERT INTO public.moon VALUES (11, 'Rhea', 6, 'Icy', false);
+INSERT INTO public.moon VALUES (12, 'Iapetus', 6, 'Icy', false);
+INSERT INTO public.moon VALUES (13, 'Titania', 7, 'Icy', false);
+INSERT INTO public.moon VALUES (14, 'Oberon', 7, 'Icy', false);
+INSERT INTO public.moon VALUES (15, 'Umbriel', 7, 'Icy', false);
+INSERT INTO public.moon VALUES (16, 'Ariel', 7, 'Icy', false);
+INSERT INTO public.moon VALUES (17, 'Miranda', 7, 'Icy', false);
+INSERT INTO public.moon VALUES (18, 'Triton', 8, 'Icy', true);
+INSERT INTO public.moon VALUES (19, 'Nereid', 8, 'Icy', false);
+INSERT INTO public.moon VALUES (20, 'Proteus', 8, 'Icy', false);
 
 
 --
@@ -309,12 +309,12 @@ INSERT INTO public.planet VALUES (3, 'Earth', 1, true, 'Earth-like');
 INSERT INTO public.planet VALUES (4, 'Mars', 1, true, 'Rocky');
 INSERT INTO public.planet VALUES (5, 'Jupiter', 1, true, 'Gas');
 INSERT INTO public.planet VALUES (6, 'Saturn', 1, true, 'Gas');
-INSERT INTO public.planet VALUES (7, 'Neptune', 1, true, 'Gas');
-INSERT INTO public.planet VALUES (8, 'Uranus', 1, true, 'Gas');
-INSERT INTO public.planet VALUES (9, 'planetx', 3, false, 'Volcanic');
-INSERT INTO public.planet VALUES (10, 'planety', 2, true, 'Rocky');
-INSERT INTO public.planet VALUES (11, 'planetplanet', 4, true, 'Frozen');
-INSERT INTO public.planet VALUES (12, 'someplanet', 4, true, 'Rocky');
+INSERT INTO public.planet VALUES (7, 'Uranus', 1, true, 'Ice giant');
+INSERT INTO public.planet VALUES (8, 'Neptune', 1, true, 'Ice giant');
+INSERT INTO public.planet VALUES (9, 'Proxima b', 2, false, 'Rocky');
+INSERT INTO public.planet VALUES (10, 'Proxima d', 2, false, 'Rocky');
+INSERT INTO public.planet VALUES (11, 'Kepler-452b', 4, false, 'Rocky');
+INSERT INTO public.planet VALUES (12, 'TRAPPIST-1e', 3, false, 'Rocky');
 
 
 --
@@ -322,20 +322,20 @@ INSERT INTO public.planet VALUES (12, 'someplanet', 4, true, 'Rocky');
 --
 
 INSERT INTO public.star VALUES (1, 'Sun', 1, 8, true);
-INSERT INTO public.star VALUES (2, 'Star2', 2, 16, false);
-INSERT INTO public.star VALUES (3, 'Star3', 4, 10, true);
-INSERT INTO public.star VALUES (4, 'vmi', 1, 5, true);
-INSERT INTO public.star VALUES (5, 'StarXXYZ', 4, 2, false);
-INSERT INTO public.star VALUES (6, 'prfaf', 2, 9, false);
+INSERT INTO public.star VALUES (2, 'Proxima Centauri', 1, 2, true);
+INSERT INTO public.star VALUES (3, 'TRAPPIST-1', 1, 7, true);
+INSERT INTO public.star VALUES (4, 'Kepler-452', 1, 1, true);
+INSERT INTO public.star VALUES (5, 'Sirius', 1, 0, false);
+INSERT INTO public.star VALUES (6, 'R136a1', 4, 0, false);
 
 
 --
 -- Data for Name: tablename; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.tablename VALUES (1, 'xyz', true);
-INSERT INTO public.tablename VALUES (2, 'weird thing', false);
-INSERT INTO public.tablename VALUES (3, 'no', false);
+INSERT INTO public.tablename VALUES (1, 'Nebula', true);
+INSERT INTO public.tablename VALUES (2, 'Comet', true);
+INSERT INTO public.tablename VALUES (3, 'Asteroid', true);
 
 
 --
@@ -520,4 +520,3 @@ ALTER TABLE ONLY public.star
 --
 -- PostgreSQL database dump complete
 --
-
